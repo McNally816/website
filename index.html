@@ -29,6 +29,12 @@
             height: auto;
             max-width: 500px; /* Maximum width for larger screens */
         }
+
+        @media only screen and (max-width: 600px) {
+            .image-container img {
+                max-width: 90%; /* Adjust max-width for mobile screens */
+            }
+        }
     </style>
     <script>
         setTimeout(function(){
@@ -42,4 +48,3 @@
     </div>
 </body>
 </html>
-
