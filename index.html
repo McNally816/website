@@ -11,7 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #4F6AB3;
+            background-color: #4F6AB3; /* RGB 79, 106, 179 */
         }
 
         .image-container {
@@ -20,20 +20,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 10px; /* Added padding for better appearance on mobile */
+            box-sizing: border-box; /* Ensures padding does not affect element size */
         }
 
         .image-container img {
-            max-width: 90%;
-            max-height: 90%;
-            width: auto;
+            width: 100%;
             height: auto;
-        }
-
-        @media only screen and (min-width: 600px) {
-            .image-container img {
-                max-width: 50%;
-                max-height: 50%;
-            }
+            max-width: 500px; /* Maximum width for larger screens */
         }
     </style>
     <script>
@@ -48,3 +42,4 @@
     </div>
 </body>
 </html>
+
