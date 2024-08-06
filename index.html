@@ -20,19 +20,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px; /* Added padding for better appearance on mobile */
-            box-sizing: border-box; /* Ensures padding does not affect element size */
         }
 
         .image-container img {
             width: 100%;
             height: auto;
-            max-width: 500px; /* Maximum width for larger screens */
+            max-width: 300px; /* Default max width */
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (min-width: 600px) {
             .image-container img {
-                max-width: 90%; /* Adjust max-width for mobile screens */
+                max-width: 500px; /* Larger max width for larger screens */
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .image-container img {
+                max-width: 700px; /* Even larger max width for wider screens */
             }
         }
     </style>
