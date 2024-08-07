@@ -24,28 +24,43 @@
         }
 
         .image-container img {
-            width: auto;
-            height: 100%;
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%;
+            height: auto;
         }
 
-        @media (max-width: 600px) {
-            .image-container img {
-                width: 100%;
-                height: auto;
-            }
+        .fallback-message {
+            color: white;
+            text-align: center;
+            display: none;
         }
     </style>
     <script>
-        setTimeout(function(){
+        function redirectToPage() {
             window.location.href = "https://apply.leader1.financial/homehub/signup/mikemcnally@LEADER1.COM";
-        }, 3000); // Redirect after 3 seconds
+        }
+
+        function showFallbackMessage() {
+            document.querySelector('.fallback-message').style.display = 'block';
+        }
+
+        window.onload = function() {
+            const img = document.querySelector('.image-container img');
+            img.onload = function() {
+                setTimeout(redirectToPage, 3000); // Redirect after 3 seconds
+            };
+            img.onerror = function() {
+                showFallbackMessage();
+                setTimeout(redirectToPage, 3000); // Redirect after 3 seconds
+            };
+        };
     </script>
 </head>
 <body>
     <div class="image-container">
         <img src="https://raw.githubusercontent.com/McNally816/website/main/mobile.png" alt="Logo">
+    </div>
+    <div class="fallback-message">
+        Image failed to load. Redirecting...
     </div>
 </body>
 </html>
