@@ -11,7 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #4F6AB3; /* RGB 79, 106, 179 */
+            background-color: #4F6AB3;
         }
 
         .image-container {
@@ -26,35 +26,33 @@
         .image-container img {
             width: 100%;
             height: auto;
+            border: 2px solid blue; /* Added for debugging */
         }
 
         .mobile {
             display: none;
         }
 
+        .desktop {
+            display: none;
+        }
+
         /* Mobile Styles */
         @media screen and (max-width: 768px) {
             body {
-                background-color: #ff0000; /* Red background for debugging */
+                background-color: red; /* Red background for debugging */
             }
             .mobile {
                 display: block;
-                border: 2px solid red; /* Debugging border */
-            }
-            .desk {
-                display: none;
             }
         }
 
         /* Desktop Styles */
         @media screen and (min-width: 769px) {
             body {
-                background-color: #4F6AB3; /* Reset background color */
+                background-color: green; /* Green background for debugging */
             }
-            .mobile {
-                display: none;
-            }
-            .desk {
+            .desktop {
                 display: block;
             }
         }
@@ -78,8 +76,8 @@
 </head>
 <body>
     <div class="image-container">
-        <img src="https://raw.githubusercontent.com/McNally816/website/main/mobile.png?token=GHSAT0AAAAAACVWJ7LL2F6X333U4XNIQC4AZVS77TA" alt="Mobile Image" class="mobile">
-        <img src="https://raw.githubusercontent.com/McNally816/website/main/desk.png?token=GHSAT0AAAAAACVWJ7LK4HN7W4FPCPRMO3UAZVS76SA" alt="Desktop Image" class="desk">
+        <img src="https://raw.githubusercontent.com/McNally816/website/main/mobile.png?token=GHSAT0AAAAAACVWJ7LL6FTKFSFEV2KCWSRWZVTCBYQ" alt="Mobile Image" class="mobile">
+        <img src="https://raw.githubusercontent.com/McNally816/website/main/desk.png?token=GHSAT0AAAAAACVWJ7LK4Y6RH2CRJFMOXHYQZVTCA4Q" alt="Desktop Image" class="desktop">
     </div>
 </body>
 </html>
