@@ -1,63 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #4F6AB3; /* RGB 79, 106, 179 */
-        }
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #4F6AB3; /* RGB 79, 106, 179 */
+    }
 
-        .image-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            box-sizing: border-box;
-        }
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-            .webmobile {
-                display: block;
-            }
-            .webdesk {
-                display: none;
-            }
-        }
-
-        /* Desktop Styles */
-        @media (min-width: 769px) {
-            .webmobile {
-                display: none;
-            }
-            .webdesk {
-                display: block;
-            }
-        }
-    </style>
-    <script>
-        setTimeout(function(){
-            window.location.href = "https://apply.leader1.financial/homehub/signup/mikemcnally@LEADER1.COM";
-        }, 3000); // Redirect after 3 seconds
-    </script>
-</head>
-<body>
-    <div class="image-container">
-        <img src="webmobile.png" alt="Mobile Image" class="webmobile">
-        <img src="webdesk.png" alt="Desktop Image" class="webdesk">
-    </div>
-</body>
-</html>
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
