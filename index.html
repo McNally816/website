@@ -3,64 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: black;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .fallback-message {
-            color: white;
-            text-align: center;
-            display: none;
-        }
-    </style>
+    <title>Redirecting...</title>
     <script>
-        function redirectToPage() {
-            window.location.href = "https://apply.leader1.financial/homehub/signup/mikemcnally@LEADER1.COM";
-        }
-
-        function showFallbackMessage() {
-            document.querySelector('.fallback-message').style.display = 'block';
-        }
-
-        window.onload = function() {
-            const img = document.querySelector('.image-container img');
-            img.onload = function() {
-                setTimeout(redirectToPage, 3000); // Redirect after 3 seconds
-            };
-            img.onerror = function() {
-                showFallbackMessage();
-                setTimeout(redirectToPage, 3000); // Redirect after 3 seconds
-            };
-        };
+        window.location.href = "https://apply.leader1.financial/homehub/signup/mikemcnally@LEADER1.COM";
     </script>
 </head>
 <body>
-    <div class="image-container">
-        <img src="https://raw.githubusercontent.com/McNally816/website/main/mobile.png" alt="Logo">
-    </div>
-    <div class="fallback-message">
-        Image failed to load. Redirecting...
-    </div>
 </body>
 </html>
