@@ -63,6 +63,17 @@
         setTimeout(function(){
             window.location.href = "https://apply.leader1.financial/homehub/signup/mikemcnally@LEADER1.COM";
         }, 3000); // Redirect after 3 seconds
+
+        // JavaScript to detect and log the current viewport width
+        document.addEventListener('DOMContentLoaded', function () {
+            var viewportWidth = window.innerWidth;
+            console.log('Viewport width:', viewportWidth);
+            if (viewportWidth <= 768) {
+                console.log('Mobile view detected');
+            } else {
+                console.log('Desktop view detected');
+            }
+        });
     </script>
 </head>
 <body>
