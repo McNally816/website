@@ -27,6 +27,26 @@
             width: 100%;
             height: auto;
         }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .webmobile {
+                display: block;
+            }
+            .webdesk {
+                display: none;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 769px) {
+            .webmobile {
+                display: none;
+            }
+            .webdesk {
+                display: block;
+            }
+        }
     </style>
     <script>
         setTimeout(function(){
@@ -36,7 +56,8 @@
 </head>
 <body>
     <div class="image-container">
-        <img src="bluelogo.jpg" alt="Logo">
+        <img src="webmobile.jpg" alt="Mobile Image" class="webmobile">
+        <img src="webdesk.jpg" alt="Desktop Image" class="webdesk">
     </div>
 </body>
 </html>
