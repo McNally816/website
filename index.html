@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images with Redirect</title>
+    <title>Responsive Image with Redirect</title>
     <style>
         body {
             display: flex;
@@ -27,28 +27,6 @@
             width: 100%;
             height: auto;
         }
-
-        .mobile {
-            display: none;
-        }
-
-        .desktop {
-            display: none;
-        }
-
-        /* Mobile Styles */
-        @media screen and (max-width: 768px) {
-            .mobile {
-                display: block;
-            }
-        }
-
-        /* Desktop Styles */
-        @media screen and (min-width: 769px) {
-            .desktop {
-                display: block;
-            }
-        }
     </style>
     <script>
         setTimeout(function(){
@@ -58,8 +36,7 @@
 </head>
 <body>
     <div class="image-container">
-        <img src="https://raw.githubusercontent.com/McNally816/website/main/mobile.png?token=GHSAT0AAAAAACVWJ7LL6FTKFSFEV2KCWSRWZVTCBYQ" alt="Mobile Image" class="mobile">
-        <img src="https://raw.githubusercontent.com/McNally816/website/main/desk.png?token=GHSAT0AAAAAACVWJ7LK4Y6RH2CRJFMOXHYQZVTCA4Q" alt="Desktop Image" class="desktop">
+        <img src="https://raw.githubusercontent.com/McNally816/website/main/mobile.png?token=GHSAT0AAAAAACVWJ7LL6FTKFSFEV2KCWSRWZVTCBYQ" alt="Responsive Image">
     </div>
 </body>
 </html>
