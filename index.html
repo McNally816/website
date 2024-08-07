@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images Test</title>
+    <title>Responsive Images with Redirect</title>
     <style>
         body {
             display: flex;
@@ -26,7 +26,6 @@
         .image-container img {
             width: 100%;
             height: auto;
-            border: 2px solid blue; /* Added for debugging */
         }
 
         .mobile {
@@ -39,9 +38,6 @@
 
         /* Mobile Styles */
         @media screen and (max-width: 768px) {
-            body {
-                background-color: red; /* Red background for debugging */
-            }
             .mobile {
                 display: block;
             }
@@ -49,24 +45,15 @@
 
         /* Desktop Styles */
         @media screen and (min-width: 769px) {
-            body {
-                background-color: green; /* Green background for debugging */
-            }
             .desktop {
                 display: block;
             }
         }
     </style>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var viewportWidth = window.innerWidth;
-            console.log('Viewport width:', viewportWidth);
-            if (viewportWidth <= 768) {
-                console.log('Mobile view detected');
-            } else {
-                console.log('Desktop view detected');
-            }
-        });
+        setTimeout(function(){
+            window.location.href = "https://apply.leader1.financial/homehub/signup/mikemcnally@LEADER1.COM";
+        }, 3000); // Redirect after 3 seconds
     </script>
 </head>
 <body>
